@@ -69,6 +69,6 @@ func (_gitVanity) Navigate(remote string, port ...uint) {
 	})
 
 	addr := ":" + p
-	log.Printf("'git.ignitelabs.net' listening on %s", addr)
+	log.Printf("listening on %s", addr)
 	log.Fatal(http.ListenAndServe(addr, nil))
 }
