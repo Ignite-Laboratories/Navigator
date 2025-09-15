@@ -65,7 +65,6 @@ func (_gitVanity) Navigate(remote string, port ...uint) {
 			return
 		}
 
-		// Browser: redirect to GitHub. Use tree/HEAD for directories; it’s fine for blobs too.
 		http.Redirect(w, r, repo, http.StatusFound)
 	})
 
